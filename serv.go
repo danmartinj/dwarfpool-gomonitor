@@ -129,7 +129,7 @@ func hashrwatcher() {
 		if err != nil {
 			fmt.Println("Problem with string to float conversion at: ", now)
 		}
-		if rate <= 1.5 {
+		if rate <= 0.0 {
 			fmt.Println("ALERT: EMAIL PROBLEM CURRENT RATE IS: ", rate)
 			emailalert()
 			time.Sleep(time.Hour * 4)
