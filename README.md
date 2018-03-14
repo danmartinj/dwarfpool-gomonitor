@@ -15,17 +15,17 @@ When used in web-enabled mode there is some configuration required.  The two pri
 variables for the email service to work and depending on your gmail service you may need to tweak your account to allow the emails to bypass security settings.
 
 On Linux:
-TOEMAIL="DestinationEmail"
-declare -x TOEMAIL
-FROMEMAIL="SenderEmail"
-declare -x FROMEMAIL
-PASSEMAIL="YourSenderEmailPassword"
-declare -x PASSEMAIL
+- TOEMAIL="DestinationEmail"
+- declare -x TOEMAIL
+- FROMEMAIL="SenderEmail"
+- declare -x FROMEMAIL
+- PASSEMAIL="YourSenderEmailPassword"
+- declare -x PASSEMAIL
 
 On Windows:
-set TOEMAIL=DestinationEmail
-set FROMEMAIL=SenderEmail
-set PASSEMAIL=YourSenderEmailPassword
+- set TOEMAIL=DestinationEmail
+- set FROMEMAIL=SenderEmail
+- set PASSEMAIL=YourSenderEmailPassword
 
 
 Currently, I also have additional code that monitors local CPU and GPU temperature and power on all client machines and performs some statistical calculations on the data.  However, it is a bit complex and rigid at the moment as it only works on Nvidia cards and was only tested for Linux machines.  If I have the cycles I will continue to work that or if anyone is really interested I can post that as well.
