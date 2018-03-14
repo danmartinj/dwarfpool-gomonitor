@@ -151,7 +151,7 @@ func main() {
 	}
 	fmt.Println("start")
 	if servermode == "web-enabled" {
-		//go hashrwatcher()
+		go hashrwatcher()
 		fmt.Println("web-enabled starting...")
 		http.HandleFunc("/", printJstWalt)
 		if err := http.ListenAndServe(":10037", nil); err != nil {

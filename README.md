@@ -11,8 +11,9 @@ notify the user by email when the hashate drops below a hard coded value.
 
 Out of the box the tool will work on most systems (tested on windows 7 and Linux) under stand-alone mode.
 
-When used in web-enabled mode there is some configuration required.  The two primary requirements are setting up the correct environmental
-variables for the email service to work and depending on your gmail service you may need to tweak your account to allow the emails to bypass security settings.
+The serv-noemail binary has been built for users who do not want email support but does want web-enabled mode support.  This binary also should work out of the box for most systems.
+
+When used in web-enabled mode (for the serv binary) or if you compile yourself there is some configuration required.  The two primary requirements are setting up the correct environmental variables for the email service to work and depending on your gmail service you may need to tweak your account to allow the emails to bypass security settings.
 
 On Linux:
 - TOEMAIL="DestinationEmail"
